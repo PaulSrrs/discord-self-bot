@@ -8,11 +8,11 @@ from datetime import datetime
 import sys
 import argparse
 
-# FUNCTION TO DEAL WITH NEGATIVE SECONDS INPUT
+# FUNCTION TO DEAL WITH NEGATIVE MILLISECONDS INPUT
 def check_positive(value):
-    ivalue = int(value)
+    ivalue = float(value)
     if ivalue <= 0:
-        raise argparse.ArgumentTypeError("%s : seconds cannot be negative !" % value)
+        raise argparse.ArgumentTypeError("%s : milliseconds cannot be negative !" % value)
     return ivalue
 
 def send_message(args):
@@ -44,7 +44,7 @@ if __name__ == '__main__':
 	parser.add_argument("-ua", "--user-agent", type=str, default="Mozilla/5.0", help="User agent used by the program, default value : Mozilla/5.0")
 	parser.add_argument("-t", "--token", type=str, help="Your discord user token, it's up to you to find it !", required=True)
 	parser.add_argument("-m", "--message", type=str, help="The message you want to post on the channel", required=True)
-	parser.add_argument("-s", "--seconds", type=check_positive, help="Your discord unique token, it's up to you to find it (google is your friend) !", required=True)
+	parser.add_argument("-ms", "--milliseconds", type=check_positive, help="Time in milliseconds between each message (a good valud is 1000 for 1 second)", required=True)
 	parser.add_argument("-c", "--channel", type=str, help="Id of the discord channel, again, it's up to you to find it (google is your friend) !", required=True)
 	try:
 		args = parser.parse_args()
@@ -52,4 +52,4 @@ if __name__ == '__main__':
 		sys.exit(1)
 	while True:     			# Infinite loop 
 		send_message(args)      # Send the message 
-		sleep(args.seconds) 	# Wait X seconds to repeat
+		sleep(args.milliseconds) 	# Wait X milliseconds to repeat

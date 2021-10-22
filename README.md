@@ -3,8 +3,9 @@
 Dependencies:
     Python3
 
-This simple Python discord script (also called self-bot) is useful to send the same message all X seconds to a specific channel or conversation.<br/>
+This simple Python discord script (also called self-bot) is useful to send the same message all X milliseconds to a specific channel or conversation.<br/>
 The message will be send as a user, not a bot.<br/>
+Be aware : I personnaly don't recommand to submit milliseconds value under 1000 to avoid being blocked by discord.<br/>
 You will need your private discord user token and the channel id. It's up to you to find it.<br/>
 
 The user-agent used is Mozilla/5.0, it can be changed.<br/>
@@ -17,15 +18,15 @@ Don't forget to add the right to execute this file with chmod command :
 
 USAGE:
 
-```discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -s SECONDS -c CHANNEL```
+```discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -s MILLISECONDS -c CHANNEL```
 
 optional arguments:<br/>
-  -h, --help                              => show this help message and exit<br/>
-  -ua USER_AGENT, --user-agent USER_AGENT => User agent used by the program, default value : Mozilla/5.0<br/>
-  -t TOKEN, --token TOKEN                 => Your discord user token, it's up to you to find it !<br/>
-  -m MESSAGE, --message MESSAGE           => The message you want to post on the channel<br/>
-  -s SECONDS, --seconds SECONDS           => Your discord unique token, it's up to you to find it (google is your friend) !<br/>
-  -c CHANNEL, --channel CHANNEL           => Id of the discord channel / conversation, again, it's up to you to find it (google is your friend) !<br/>
+  -h,                 --help                      => show this help message and exit<br/>
+  -ua   USER_AGENT,   --user-agent USER_AGENT     => User agent used by the program, default value : Mozilla/5.0<br/>
+  -t    TOKEN,        --token TOKEN               => Your discord user token, it's up to you to find it !<br/>
+  -m    MESSAGE,      --message MESSAGE           => The message you want to post on the channel<br/>
+  -ms   MILLISECONDS, --milliseconds MILLISECONDS => Time in milliseconds between each message (a good valud is 1000 for 1 second)<br/>
+  -c    CHANNEL,      --channel CHANNEL           => Id of the discord channel / conversation, again, it's up to you to find it (google is your friend) !<br/>
 
 I, Paul Surrans, am not responsable of any consequences using this script (please avoid to spam peoples or channels...).<br/>
 
