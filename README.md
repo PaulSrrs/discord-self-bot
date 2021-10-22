@@ -3,7 +3,7 @@
 Dependencies:
     Python3
 
-This simple Python discord script (also called self-bot) is useful to send the same message all X seconds to a specific channel.<br/>
+This simple Python discord script (also called self-bot) is useful to send the same message all X seconds to a specific channel or conversation.<br/>
 The message will be send as a user, not a bot.<br/>
 You will need your private discord user token and the channel id. It's up to you to find it.<br/>
 
@@ -25,9 +25,9 @@ optional arguments:<br/>
   -t TOKEN, --token TOKEN                 => Your discord user token, it's up to you to find it !<br/>
   -m MESSAGE, --message MESSAGE           => The message you want to post on the channel<br/>
   -s SECONDS, --seconds SECONDS           => Your discord unique token, it's up to you to find it (google is your friend) !<br/>
-  -c CHANNEL, --channel CHANNEL           => Id of the discord channel, again, it's up to you to find it (google is your friend) !<br/>
+  -c CHANNEL, --channel CHANNEL           => Id of the discord channel / conversation, again, it's up to you to find it (google is your friend) !<br/>
 
-I, Paul Surrans, am not responsable of any consequences using this script.<br/>
+I, Paul Surrans, am not responsable of any consequences using this script (please avoid to spam peoples or channels...).<br/>
 
 Made with love by Paul Surrans, Student at Epitech Lille, France.<br/>
 
