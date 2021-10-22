@@ -18,7 +18,7 @@ Don't forget to add the right to execute this file with chmod command :
 
 USAGE:
 
-```discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -s MILLISECONDS -c CHANNEL```
+```discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -ms MILLISECONDS -c CHANNEL```
 
 optional arguments:<br/>
   -h,                 --help                      => show this help message and exit<br/>
@@ -34,9 +34,9 @@ Made with love by Paul Surrans, Student at Epitech Lille, France.<br/>
 
 EXEMPLE:
 
-I want to post 'Hello world !' message every hour on the channel 862054292999999916 with my token NPUwMzI2444444MzQ0Nzg1OTWm.YW3MfQ.xeFeixLOK99CydWfRXNBO5JtE0oNk :<br/>
+I want to post 'Hello world !' message every second on the channel 862054292999999916 with my token NPUwMzI2444444MzQ0Nzg1OTWm.YW3MfQ.xeFeixLOK99CydWfRXNBO5JtE0oNk :<br/>
 
-```python3 discord_self_bot.py -t "NPUwMzI2444444MzQ0Nzg1OTWm.YW3MfQ.xeFeixLOK99CydWfRXNBO5JtE0oNk" -m "Hello world !" -s 3600 -c 862054292999999916```
+```python3 discord_self_bot.py -t "NPUwMzI2444444MzQ0Nzg1OTWm.YW3MfQ.xeFeixLOK99CydWfRXNBO5JtE0oNk" -m "Hello world !" -ms 1000 -c 862054292999999916```
 
 License: MIT<br/>
 
