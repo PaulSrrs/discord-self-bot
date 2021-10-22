@@ -35,6 +35,12 @@ I, Paul Surrans, am not responsable of any consequences using this script.
 
 Made with love by Paul Surrans, Student at Epitech Lille, France.
 
+EXEMPLE:
+
+I want to post 'Hello world !' message every hour on the channel 862054292999999916 with my token NPUwMzI2444444MzQ0Nzg1OTWm.YW3MfQ.xeFeixLOK99CydWfRXNBO5JtE0oNk :
+
+```python3 discord_self_bot.py -t "NPUwMzI2444444MzQ0Nzg1OTWm.YW3MfQ.xeFeixLOK99CydWfRXNBO5JtE0oNk" -m "Hello world !" -s 3600 -c 862054292999999916```
+
 License: MIT
 
 *All credits goes to Kim Cho, c.f :
