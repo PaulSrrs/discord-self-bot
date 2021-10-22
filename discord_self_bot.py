@@ -50,6 +50,6 @@ if __name__ == '__main__':
 		args = parser.parse_args()
 	except:
 		sys.exit(1)
-	while True:     			# Infinite loop 
-		send_message(args)      # Send the message 
-		sleep(args.milliseconds) 	# Wait X milliseconds to repeat
+	while True:     						# Infinite loop 
+		send_message(args)      			# Send the message 
+		sleep(args.milliseconds / 1000) 	# Wait X milliseconds to repeat
