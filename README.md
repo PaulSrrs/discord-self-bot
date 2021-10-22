@@ -28,6 +28,7 @@ optional arguments:<br/>
   -ms   MILLISECONDS, --milliseconds MILLISECONDS => Time in milliseconds between each message (a good valud is 1000 for 1 second)<br/>
   -c    CHANNEL,      --channel CHANNEL           => Id of the discord channel / conversation, again, it's up to you to find it (google is your friend) !<br/>
 
+This script is destinated to be used as educational purpose only.<br/>
 I, Paul Surrans, am not responsable of any consequences using this script (please avoid to spam peoples or channels...).<br/>
 
 Made with love by Paul Surrans, Student at Epitech Lille, France.<br/>
