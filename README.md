@@ -18,7 +18,9 @@ Don't forget to add the right to execute this file with chmod command :
 
 USAGE:
 
-```discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -ms MILLISECONDS -c CHANNEL```
+```./discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -ms MILLISECONDS -c CHANNEL```
+or
+```python3 discord_self_bot.py [-h] [-ua USER_AGENT] -t TOKEN -m MESSAGE -ms MILLISECONDS -c CHANNEL```
 
 optional arguments:<br/>
   -h,                 --help                      => show this help message and exit<br/>
