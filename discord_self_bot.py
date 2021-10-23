@@ -12,7 +12,7 @@ import argparse
 def check_positive(value):
     ivalue = float(value)
     if ivalue <= 0:
-        raise argparse.ArgumentTypeError("%s : milliseconds cannot be negative !" % value)
+        raise argparse.ArgumentTypeError("%s : milliseconds cannot be negative or equal to 0 !" % value)
     return ivalue
 
 def send_message(args):
